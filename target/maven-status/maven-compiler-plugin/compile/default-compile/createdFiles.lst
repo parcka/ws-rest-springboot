@@ -1,0 +1,3 @@
+controllers\CalculatorController.class
+entities\Operation.class
+com\example\WsRestSpringbootApplication.class
