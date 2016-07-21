@@ -1,35 +1,54 @@
 package entities;
 
 /**
- * Created by XTR100 on 28/06/2016.
+ * Created by XTR100 on 01/07/2016.
  */
 public class Operation {
 
-    int operatorA;
-    int operatorB;
-    int result;
+    Integer numberA;
+    Integer numberB;
+    String operatorSimbol;
+    Integer result;
 
-    public int getOperatorA() {
-        return operatorA;
+    public Integer getNumberA() {
+        return numberA;
     }
 
-    public void setOperatorA(int operatorA) {
-        this.operatorA = operatorA;
+    public void setNumberA(Integer numberA) {
+        this.numberA = numberA;
     }
 
-    public int getOperatorB() {
-        return operatorB;
+    public Integer getNumberB() {
+        return numberB;
     }
 
-    public void setOperatorB(int operatorB) {
-        this.operatorB = operatorB;
+    public void setNumberB(Integer numberB) {
+        this.numberB = numberB;
     }
 
-    public int getResult() {
+    public Integer getResult() {
         return result;
     }
 
-    public void setResult(int result) {
+    public void setResult(Integer result) {
         this.result = result;
+    }
+
+    public String getOperatorSimbol() {
+        return operatorSimbol;
+    }
+
+    public void setOperatorSimbol(String operatorSimbol) {
+        this.operatorSimbol = operatorSimbol;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "numberA=" + numberA +
+                ", numberB=" + numberB +
+                ", operatorSimbol='" + operatorSimbol + '\'' +
+                ", result=" + result +
+                '}';
     }
 }
